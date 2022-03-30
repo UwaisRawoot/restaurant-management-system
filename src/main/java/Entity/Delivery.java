@@ -1,3 +1,10 @@
+/**
+ *
+ * Builder patter for the delivery entity
+ * @author Zubair Esau - 217100554
+ *
+ */
+
 package Entity;
 
 public class Delivery {
@@ -12,7 +19,7 @@ public class Delivery {
     }
 
 
-
+//Getters and setters
     public int getDeliveryId() {
         return deliveryId;
     }
@@ -29,7 +36,7 @@ public class Delivery {
         this.orderId = orderId;
     }
 
-
+//toString
     @Override
     public String toString() {
         return "Delivery{" +
@@ -38,7 +45,7 @@ public class Delivery {
                 '}';
     }
 
-
+//Builder pattern class
     public static class Builder{
         private int deliveryId ;
         private int orderId ;
