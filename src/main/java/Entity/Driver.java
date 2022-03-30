@@ -1,3 +1,10 @@
+/**
+ *
+ * Builder pattern for the driver entity
+ * @author Zubair Esau - 217100554
+ *
+ */
+
 package Entity;
 
 public class Driver {
@@ -15,7 +22,7 @@ public class Driver {
         this.DriverName = builder.DriverName;
     }
 
-
+    // Getters and setters
 
     public int getDriverId() {
         return driverId;
@@ -49,7 +56,7 @@ public class Driver {
         DriverName = driverName;
     }
 
-
+    //toString
     @Override
     public String toString() {
         return "Driver{" +
@@ -60,7 +67,7 @@ public class Driver {
                 '}';
     }
 
-
+       //Builder pattern class
     public static class Builder {
         private int driverId ;
         private int deliveryId ;
