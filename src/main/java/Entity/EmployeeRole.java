@@ -6,5 +6,7 @@
 
 package Entity;
 
-public class EmployeeRole {
+public class EmployeeRole extends Employee{
+    private int empId;
+    private int roleId;
 }
