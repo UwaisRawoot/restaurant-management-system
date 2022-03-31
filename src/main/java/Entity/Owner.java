@@ -7,13 +7,13 @@ package Entity;
  */
 
 public class Owner {
-        public int ownerId;
-        public String ownerName;
+        private int ownerId;
+        private String ownerName;
 
 
         //Construtor
 
-        public Owner(Builder builder) {
+        private Owner(Builder builder) {
             this.ownerId = builder.ownerId;
             this. ownerName= builder.ownerName;
 

@@ -7,12 +7,12 @@ package Entity;
  */
 
 public class Reservation {
-        public  int reserveId;
-        public String reserveName;
+        private int reserveId;
+        private String reserveName;
 
      // Constructor
 
-        public Reservation(Builder builder) {
+        private Reservation(Builder builder) {
             this.reserveId = builder.reserveId;
             this. reserveName= builder.reserveName;
         }
