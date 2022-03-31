@@ -1,4 +1,10 @@
 package Entity;
+/*
+ *Reservation.java
+ * VuyolwethuKalolo
+ * 214015637
+ * 31-03-2022
+ */
 
 public class Reservation {
         public  int reserveId;

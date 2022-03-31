@@ -1,4 +1,10 @@
 package Entity;
+/*
+ *Owner.java
+ * VuyolwethuKalolo
+ * 214015637
+ * 31-03-2022
+ */
 
 public class Owner {
         public int ownerId;
