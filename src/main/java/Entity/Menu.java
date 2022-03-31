@@ -7,14 +7,13 @@
 
 package Entity;
 
-
 public class Menu {
 
     private int menuId;
     private String menuItem;
 
     //private constructor
-    private  Menu(Builder builder){
+    private Menu(Builder builder) {
         this.menuId = builder.menuId;
         this.menuItem = builder.menuItem;
     }
@@ -39,8 +38,8 @@ public class Menu {
 
     //toString
     @Override
-    public String toString(){
-        return  "Menu{" +
+    public String toString() {
+        return "Menu{" +
                 ", menuId=" + menuId + '\'' +
                 ", menuItem=" + menuItem + '\'' +
                 '}';
@@ -51,7 +50,7 @@ public class Menu {
         private int menuId;
         private String menuItem;
 
-        public Builder setMenuId(int menuId){
+        public Builder setMenuId(int menuId) {
             this.menuId = menuId;
             return this;
         }
@@ -61,13 +60,13 @@ public class Menu {
             return this;
         }
 
-        public Builder copy(Menu menu){
+        public Builder copy(Menu menu) {
             this.menuId = menuId;
             this.menuItem = menuItem;
             return this;
         }
 
-        public Menu build(){
+        public Menu build() {
             return new Menu(this);
         }
     }
