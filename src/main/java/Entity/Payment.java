@@ -15,7 +15,7 @@ public class Payment {
     private String payEft;
 
     //private constructor
-    private Payment(Builder builder){
+    private Payment(Builder builder) {
         this.paymentId = builder.paymentId;
         this.payCash = builder.payCash;
         this.payCard = builder.payCard;
@@ -26,33 +26,41 @@ public class Payment {
 
     public int getPaymentId() {
         return paymentId;
-    }public String getPayCash() {
+    }
+
+    public String getPayCash() {
         return payCash;
     }
+
     public String getPayCard() {
         return payCard;
     }
+
     public String getPayEft() {
         return payEft;
     }
 
     //Setters
-    public void setPaymentId(int paymentId){
+    public void setPaymentId(int paymentId) {
         this.paymentId = paymentId;
     }
-    public void setPayCash(String payCash){
+
+    public void setPayCash(String payCash) {
         this.payCash = payCash;
-    }public void setPayCard(String payCard){
+    }
+
+    public void setPayCard(String payCard) {
         this.payCard = payCard;
     }
-    public void setPayEft(String payEft){
+
+    public void setPayEft(String payEft) {
         this.payEft = payEft;
     }
 
     //toString
     @Override
-    public String toString(){
-        return  "Payment{" +
+    public String toString() {
+        return "Payment{" +
                 ", paymentId" + paymentId + '\'' +
                 ", payCash=" + payCash + '\'' +
                 ", payCard=" + payCard + '\'' +
@@ -68,32 +76,35 @@ public class Payment {
         private String payCard;
         private String payEft;
 
-        public Builder setPaymentId(int paymentId){
+        public Builder setPaymentId(int paymentId) {
             this.paymentId = paymentId;
             return this;
         }
 
-        public Builder setPayCash(String payCash){
+        public Builder setPayCash(String payCash) {
             this.payCash = payCash;
             return this;
         }
-        public Builder setPayCard(String payCard){
+
+        public Builder setPayCard(String payCard) {
             this.payCard = payCard;
             return this;
         }
-        public Builder setPayEft(String payEft){
+
+        public Builder setPayEft(String payEft) {
             this.payEft = payEft;
             return this;
         }
 
-        public Builder copy(Payment payment){
+        public Builder copy(Payment payment) {
             this.paymentId = payment.paymentId;
             this.payCash = payment.payCash;
             this.payCard = payment.payCard;
             this.payEft = payment.payEft;
             return this;
         }
-        public Payment build(){
+
+        public Payment build() {
             return new Payment(this);
         }
     }
