@@ -61,8 +61,8 @@ public class Menu {
         }
 
         public Builder copy(Menu menu) {
-            this.menuId = menuId;
-            this.menuItem = menuItem;
+            this.menuId = menu.menuId;
+            this.menuItem = menu.menuItem;
             return this;
         }
 
